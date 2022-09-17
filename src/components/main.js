@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faBriefcase, faCode, faHome, faUser, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faCode, faUser, faPhone } from '@fortawesome/free-solid-svg-icons'
 import Photo from '../images/erika.png'
 
 const socials = [
@@ -70,7 +70,7 @@ const MainWindow = () => {
                         Resumé
                       </a>
                       {socials.map((social, i) => (
-                          <a href={social.url} className="proButton" target="_blank" rel='noopener noreferrer'>
+                          <a href={social.url} className="proButton" target="_blank" rel='noopener noreferrer' key={social.url}>
                             <FontAwesomeIcon icon={social.icon} size="lg" fixedWidth/>
                           </a>
                       ))}
@@ -91,7 +91,7 @@ const MainWindow = () => {
               </div>
               <div className="rightScreen flexColumn">
                 <div className="homeImageContainer">
-                  <img src={Photo} alt="A picture of Rama Lesmana."/>
+                  <img src={Photo} alt="Rama Lesmana."/>
                 </div>
               </div>
           </div>
