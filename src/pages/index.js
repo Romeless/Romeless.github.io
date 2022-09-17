@@ -1,4 +1,5 @@
 import * as React from "react"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,6 +8,7 @@ import MainWindow from "../components/main"
 import SocialLinks from "../components/socialLinks"
 import RightbarMail from "../components/rightbarMail"
 import Footer from "../components/footer"
+
 
 const IndexPage = () => (
   <Layout>
